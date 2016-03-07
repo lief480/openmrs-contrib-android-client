@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId "org.openmrs.mobile"
         minSdkVersion 10
-        targetSdkVersion 22
+        targetSdkVersion 23
 
         testApplicationId "org.openmrs.mobile.test"
         testInstrumentationRunner "org.openmrs.mobile.test.OpenMRSInstrumentationTestRunner"
@@ -36,6 +36,7 @@ dependencies {
     compile 'com.google.guava:guava:18.0'
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:gridlayout-v7:23.1.1'
+    compile "com.android.support:support-v4:23.0.+"
     compile files('libs/commons-codec.jar')
     compile files('libs/httpcore-4.3.2.jar')
     compile files('libs/httpmime-4.3.6.jar')

@@ -38,6 +38,7 @@ import org.openmrs.mobile.net.VisitsManager;
 import org.openmrs.mobile.net.helpers.FindPatientsHelper;
 import org.openmrs.mobile.net.helpers.VisitsHelper;
 import org.openmrs.mobile.utilities.ApplicationConstants;
+import org.openmrs.mobile.utilities.NotificationUtil;
 import org.openmrs.mobile.utilities.TabUtil;
 import org.openmrs.mobile.utilities.ToastUtil;
 import java.util.ArrayList;
@@ -237,6 +238,7 @@ public class PatientDashboardActivity extends ACBaseActivity implements ActionBa
                 ToastUtil.showShortToast(this,
                         ToastUtil.ToastType.SUCCESS,
                         R.string.synchronize_patient_successful);
+                NotificationUtil.showNotification(this, "Login", R.string.synchronize_patient_successful, this.getClass());
             } else {
                 ToastUtil.showShortToast(this,
                         ToastUtil.ToastType.ERROR,
@@ -249,6 +251,7 @@ public class PatientDashboardActivity extends ACBaseActivity implements ActionBa
                 ToastUtil.showShortToast(this,
                         ToastUtil.ToastType.SUCCESS,
                         R.string.start_visit_successful);
+                NotificationUtil.showNotification(this, "Visit", R.string.start_visit_successful, this.getClass());
             } else {
                 ToastUtil.showShortToast(this,
                         ToastUtil.ToastType.ERROR,
